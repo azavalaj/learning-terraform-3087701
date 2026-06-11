@@ -3,7 +3,7 @@ data "aws_ami" "app_ami" {
 
   filter {
     name   = "name"
-    values = ["cognosys*tomcat*"]
+    values = ["proserv*tomcat*"]
   }
 
   filter {
