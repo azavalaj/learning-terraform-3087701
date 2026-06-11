@@ -3,7 +3,7 @@ data "aws_ami" "app_ami" {
 
   filter {
     name   = "name"
-    values = ["neodoo_ubuntu_*_tomcat"]
+    values = ["*tomcat"]
   }
 
   filter {
