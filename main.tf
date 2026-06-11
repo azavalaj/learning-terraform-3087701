@@ -6,6 +6,11 @@ data "aws_ami" "app_ami" {
     values = ["bitnami-tomcat-*"]
   }
 
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+
   owners = ["679593333241"] # Bitnami
 }
 
