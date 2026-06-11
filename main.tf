@@ -19,7 +19,7 @@ data "aws_vpc" "default" {
 }
 
 resource "aws_instance" "blog" {
-  ami                    = data.aws_ami.app_ami.id
+  ami                    = "ami-0e9ecf969723e44cd"
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.blog.id]
 
