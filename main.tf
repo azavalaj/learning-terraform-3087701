@@ -11,7 +11,7 @@ data "aws_ami" "app_ami" {
     values = ["hvm"]
   }
 
-  owners = ["679593333241"] # AWS Marketplace
+  owners = ["339712978510"] # 
 }
 
 resource "aws_instance" "web" {
