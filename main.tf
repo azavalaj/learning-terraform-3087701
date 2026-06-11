@@ -3,7 +3,7 @@ data "aws_ami" "app_ami" {
 
   filter {
     name   = "name"
-    values = ["*tomcat*"]
+    values = ["cognosys*tomcat*"]
   }
 
   filter {
@@ -11,7 +11,7 @@ data "aws_ami" "app_ami" {
     values = ["hvm"]
   }
 
-  owners = ["679593333241"] # Neodoo (Bitnami?)
+  owners = ["679593333241"] # AWS Marketplace
 }
 
 resource "aws_instance" "web" {
