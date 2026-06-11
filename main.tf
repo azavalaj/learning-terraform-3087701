@@ -5,8 +5,6 @@ data "aws_ami" "app_ami" {
     name   = "name"
     values = ["bitnami-tomcat-*"]
   }
-
-  owners = ["979382823631"] # Bitnami
 }
 
 resource "aws_instance" "web" {
