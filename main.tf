@@ -3,7 +3,7 @@ data "aws_ami" "app_ami" {
 
   filter {
     name   = "name"
-    values = ["bitnami-tomcat-*"]
+    values = ["neodoo_ubuntu_*_tomcat"]
   }
 
   filter {
@@ -11,7 +11,7 @@ data "aws_ami" "app_ami" {
     values = ["hvm"]
   }
 
-  owners = ["679593333241"] # Bitnami
+  owners = ["679593333241"] # Neodoo (Bitnami?)
 }
 
 resource "aws_instance" "web" {
