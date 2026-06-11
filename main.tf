@@ -3,7 +3,7 @@ data "aws_ami" "app_ami" {
 
   filter {
     name   = "name"
-    values = ["proserv*tomcat*"]
+    values = ["*tomcat*"]
   }
 
   filter {
@@ -11,7 +11,7 @@ data "aws_ami" "app_ami" {
     values = ["hvm"]
   }
 
-  owners = ["339712978510"] # 
+  owners = ["345002264488"] # 
 }
 
 resource "aws_instance" "web" {
